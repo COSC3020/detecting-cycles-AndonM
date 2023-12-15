@@ -13,5 +13,4 @@ exercises.
 
 ## Runtime Analysis
 
-What is the worst-case big $\Theta$ complexity of your implementation? Add your
-answer, including your reasoning, to this markdown file.
+We see the outer loop runs through V-1 vertices where V represents all the vertices in the graph taking O(V) time. Inside the loop, the 'hasCycleDFS' function will visit all vertices and edges for every connected component. In a nutshell, in the worst case we must perform a depth-first search for every vertex and edge leading to a total time complexity of O(V + E).
